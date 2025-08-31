@@ -20,7 +20,6 @@ const BookTable = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Basic validation
     if (!formData.name.trim()) {
       alert("Please enter your name");
       return;
@@ -41,11 +40,9 @@ const BookTable = () => {
       return;
     }
 
-    // Here you would typically send the data to your backend
     console.log("Form submitted:", formData);
     alert("Table reservation request submitted successfully!");
 
-    // Reset form
     setFormData({
       name: "",
       email: "",
@@ -71,8 +68,7 @@ const BookTable = () => {
             </h5>
           </div>
           <p className="font-roboto text-base font-normal leading-[24px] text-white">
-            Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo
-            molestie vel, ornare non id blandit netus.
+            Reserve your spot at our restaurant and enjoy an unforgettable dining experience in the heart of Kolkata. Book your table now and let us make your meal truly special.
           </p>
         </div>
         <form
